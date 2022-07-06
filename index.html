@@ -1,180 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Outverses</title>
 
     <!-- linking -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
     <link rel="stylesheet" href="main.css">
 
 </head>
-
 <body>
+    <!-- Navbar -->
+
+    <input type="checkbox" id="burger-toggle">
+<label for="burger-toggle" class="burger-menu">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</label>
+<div class="menu">
+  <div class="menu-inner">
+    <ul class="menu-nav">
+      <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+            <div>Home</div>
+          </span></a></li>
+      <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+            <div>About</div>
+          </span></a></li>
+      <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+            <div>Service</div>
+          </span></a></li>
+      <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+            <div>Contact Us</div>
+          </span></a></li>
+    </ul>
+    <div class="gallery">
+      <div class="title">
+        <p>Explore our services</p>
+      </div>
+      <div class="images">
+        <a class="image-link" href="#">
+          <div class="image" data-label="Service Name 1"><img src="img/card1.png" alt=""></div>
+        </a>
+        <a class="image-link" href="#">
+          <div class="image" data-label="Service Name 2"><img src="img/card2.png" alt=""></div>
+        </a>
+        <a class="image-link" href="#">
+          <div class="image" data-label="Service Name 3"><img src="img/card3.png" alt=""></div>
+        </a>
+        <a class="image-link" href="#">
+          <div class="image" data-label="Service Name 4"><img src="img/card4.png" alt=""></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- <img src="img/planet.svg"> -->
     <object class="orbit" type="image/svg+xml" data="img/planet.svg"></object>
+    
 
+    <!-- About -->
 
     <section id="about">
-        <div class="heading">What we do?</div>
-        <p class="text col-lg-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices turpis eget
-            diam luctus, non pharetra sem malesuada. Duis et bibendum metus. Fusce ultricies neque non massa ornare
-            sagittis. Ut nisi metus, tincidunt ut tristique et, sodales nec risus. Nulla sit amet egestas tortor. Proin
-            non eleifend eros. Morbi aliquam placerat pulvinar. Proin consectetur, erat eget fermentum tempor, nisl eros
-            posuere felis, sed bibendum ligula nisi in ipsum. Sed bibendum urna vel erat tincidunt iaculis. Sed blandit
-            neque sed imperdiet hendrerit.</p>
-        <p class="text col-lg-8"> Nullam eleifend velit nec urna auctor, eget congue risus tincidunt. Curabitur rutrum,
-            libero ut convallis tempor, lorem arcu congue lacus, eget ornare massa dui tempor odio. In nisl ipsum,
-            scelerisque sit amet bibendum vel, elementum posuere neque. Ut scelerisque ex vel mi sodales fringilla.
-            Praesent ac massa vitae justo fermentum tincidunt a sit amet diam. Vivamus dui velit, tempus et tempor vel,
-            lobortis id tortor. Donec nec purus interdum, lobortis nisl sit amet, malesuada nibh.</p>
-    </section>
-
-    <section id="counter" class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+        <div class="container">
             <div class="row">
-                <!-- counter -->
-                <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms" style="visibility: visible; animation-duration: 300ms; animation-name: fadeInUp;">
-                    <i class="fa fa-beer medium-icon"></i>
-                    <span id="anim-number-pizza" class="counter-number"></span>
-                    <span class="timer counter alt-font appear" data-to="980" data-speed="7000">2800</span>
-                    <p class="counter-title">Beer Ordered</p>
-                </div>
-                <!-- end counter -->
-                <!-- counter -->
-                <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="600ms" style="visibility: visible; animation-duration: 600ms; animation-name: fadeInUp;">
-                    <i class="fa fa-heart medium-icon"></i>
-                     <span class="timer counter alt-font appear" data-to="980" data-speed="7000">980</span>
-                    <span class="counter-title">Happy Clients</span>
-                </div>
-                <!-- end counter -->
-                <!-- counter -->
-                <div class="col-md-3 col-sm-6 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated" data-wow-duration="900ms" style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;">
-                    <i class="fa fa-anchor medium-icon"></i>
-                     <span class="timer counter alt-font appear" data-to="810" data-speed="7000">810</span>
-                    <span class="counter-title">Projects Completed</span>
-                </div>
-                <!-- end counter -->
-                <!-- counter -->
-                <div class="col-md-3 col-sm-6 text-center counter-section wow fadeInUp animated" data-wow-duration="1200ms" style="visibility: visible; animation-duration: 1200ms; animation-name: fadeInUp;">
-                    <i class="fa fa-user medium-icon"></i>
-                     <span class="timer counter alt-font appear" data-to="600" data-speed="7000">600</span>
-                    <span class="counter-title">Clients Served</span>
-                </div>
-                <!-- end counter -->
-            </div>
-    </section>
-
-    <section id="services">
-        <div class="heading"><h2>services</h2></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur, dolorum deserunt, odit voluptatibus ipsum sed culpa aliquid sunt asperiores temporibus minus saepe rem, nisi facere commodi harum alias placeat!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tenetur quasi, eos error in fuga animi aliquid, a consectetur unde, corporis architecto. Totam modi rem maiores alias repellendus, labore tempore!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia repellat dolorum debitis maxime beatae nemo perspiciatis, eum voluptates, eligendi placeat esse asperiores. Dicta consequatur voluptatum, nesciunt tenetur quae dolores commodi?
-        </p>
-        <div class="serviceBox"></div>
-    </section>
-
-    <!-- testimonial -->
-    <section id="testimonial">
-    <div class="container-fluid px-3 px-sm-5 my-5 text-center">
-        <h4 class="mb-5 font-weight-bold">What Our Client Say</h4>
-        <div class="owl-carousel owl-theme">
-            <div class="item first prev">
-                <div class="card border-0 py-3 px-4">
-                    <div class="row justify-content-center">
-                        <img src="https://i.imgur.com/gazoShk.jpg" class="img-fluid profile-pic mb-4 mt-3">
-                    </div>
-                    <h6 class="mb-3 mt-2">Marielle Haag</h6>
-                    <p class="content mb-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
-                </div>
-            </div>
-            <div class="item show">
-                <div class="card border-0 py-3 px-4">
-                    <div class="row justify-content-center">
-                        <img src="https://i.imgur.com/oW8Wpwi.jpg" class="img-fluid profile-pic mb-4 mt-3">
-                    </div>
-                    <h6 class="mb-3 mt-2">Ximena Vegara</h6>
-                    <p class="content mb-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
-                </div>
-            </div>
-            <div class="item next">
-                <div class="card border-0 py-3 px-4">
-                    <div class="row justify-content-center">
-                        <img src="https://i.imgur.com/ndQx2Rg.jpg" class="img-fluid profile-pic mb-4 mt-3">
-                    </div>
-                    <h6 class="mb-3 mt-2">John Paul</h6>
-                    <p class="content mb-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
-                </div>
-            </div>
-            <div class="item last">
-                <div class="card border-0 py-3 px-4">
-                    <div class="row justify-content-center">
-                        <img src="https://i.imgur.com/T5aOhwh.jpg" class="img-fluid profile-pic mb-4 mt-3">
-                    </div>
-                    <h6 class="mb-3 mt-2">William Doe</h6>
-                    <p class="content mb-5 mx-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
-                </div>
+                <div class="heading">What we do?</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices turpis eget
+                    diam luctus, non pharetra sem malesuada. Duis et bibendum metus. Fusce ultricies neque non massa ornare
+                    sagittis. Ut nisi metus, tincidunt ut tristique et, sodales nec risus. Nulla sit amet egestas tortor. Proin
+                    non eleifend eros. Morbi aliquam placerat pulvinar. Proin consectetur, erat eget fermentum tempor, nisl eros
+                    posuere felis, sed bibendum ligula nisi in ipsum. Sed bibendum urna vel erat tincidunt iaculis. Sed blandit
+                    neque sed imperdiet hendrerit.</p>
+                <p> Nullam eleifend velit nec urna auctor, eget congue risus tincidunt. Curabitur rutrum,
+                    libero ut convallis tempor, lorem arcu congue lacus, eget ornare massa dui tempor odio. In nisl ipsum,
+                    scelerisque sit amet bibendum vel, elementum posuere neque. Ut scelerisque ex vel mi sodales fringilla.
+                    Praesent ac massa vitae justo fermentum tincidunt a sit amet diam. Vivamus dui velit, tempus et tempor vel,
+                    lobortis id tortor. Donec nec purus interdum, lobortis nisl sit amet, malesuada nibh.</p>
             </div>
         </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="counter" class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+        <div class="row">
+            <!-- counter -->
+            <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="300ms" style="visibility: visible; animation-duration: 300ms; animation-name: fadeInUp;">
+                <i class="material-symbols-outlined">
+                    today
+                </i>
+                <span id="anim-number-pizza" class="counter-number"></span>
+                <span class="timer counter alt-font appear" data-to="980" data-speed="7000">2800</span>
+                <p class="counter-title">Years Served</p>
+            </div>
+            <!-- end counter -->
+            <!-- counter -->
+            <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated" data-wow-duration="600ms" style="visibility: visible; animation-duration: 600ms; animation-name: fadeInUp;">
+                <i class="material-symbols-outlined">
+                    sentiment_satisfied
+                </i>
+                 <span class="timer counter alt-font appear" data-to="980" data-speed="7000">980</span>
+                <span class="counter-title">Happy Clients</span>
+            </div>
+            <!-- end counter -->
+            <!-- counter -->
+            <div class="col-md-3 col-sm-6 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated" data-wow-duration="900ms" style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;">
+                <i class="material-symbols-outlined">
+                    anchor
+                </i>
+                 <span class="timer counter alt-font appear" data-to="810" data-speed="7000">810</span>
+                <span class="counter-title">Projects Completed</span>
+            </div>
+            <!-- end counter -->
+            <!-- counter -->
+            <div class="col-md-3 col-sm-6 text-center counter-section wow fadeInUp animated" data-wow-duration="1200ms" style="visibility: visible; animation-duration: 1200ms; animation-name: fadeInUp;">
+                <i class="material-symbols-outlined">
+                    favorite
+                </i>
+                 <span class="timer counter alt-font appear" data-to="600" data-speed="7000">600</span>
+                <span class="counter-title">Clients Served</span>
+            </div>
+            <!-- end counter -->
+        </div>
+</section>
+
+<!-- services -->
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="heading">services</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices turpis eget
+                diam luctus, non pharetra sem malesuada. Duis et bibendum metus. Fusce ultricies neque non massa ornare
+                sagittis. Ut nisi metus, tincidunt ut tristique et, sodales nec risus. Nulla sit amet egestas tortor. Proin
+                non eleifend eros. Morbi aliquam placerat pulvinar. Proin consectetur, erat eget fermentum tempor, nisl eros
+                posuere felis, sed bibendum ligula nisi in ipsum. Sed bibendum urna vel erat tincidunt iaculis. Sed blandit
+                neque sed imperdiet hendrerit.</p>
+        </div>
     </div>
-    </section>
+</section>
 
-    <section id="team">
-        <div class="heading"></div>
-        <div class="text"></div>
-        <div class="teamCarousel"></div>
-    </section>
+<!-- testimonial -->
+<section id="testimonials">
+<div class="content">
+    
+    <div class="container">
+        <div class="row">
+            <div class="heading">What our clients say about us?</div></div>
+      <div class="owl-carousel slide-one-item">
+        <div class="d-md-flex testimony-29101 align-items-stretch">
+          <div class="image" style="background-image: url('img/person_1.jpg');"></div>
+          <div class="text">
+            <blockquote>
+              <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, at! Atque totam obcaecati veniam eius vero, similique quibusdam! Sunt sequi, nemo. Quam consequuntur ipsum suscipit repellat molestiae laboriosam, incidunt!&rdquo;</p>
 
-    <section class="get-in-touch">
-        <h1 class="title">Get in touch</h1>
-        <form class="contact-form row">
-           <div class="form-field col-lg-6">
-              <input id="name" class="input-text js-input" type="text" required>
-              <label class="label" for="name">Name</label>
-           </div>
-           <div class="form-field col-lg-6 ">
-              <input id="email" class="input-text js-input" type="email" required>
-              <label class="label" for="email">E-mail</label>
-           </div>
-           <div class="form-field col-lg-6 ">
-              <input id="company" class="input-text js-input" type="text" required>
-              <label class="label" for="company">Company Name</label>
-           </div>
-            <div class="form-field col-lg-6 ">
-              <input id="phone" class="input-text js-input" type="text" required>
-              <label class="label" for="phone">Contact Number</label>
-           </div>
-           <div class="form-field col-lg-12">
-              <input id="message" class="input-text js-input" type="text" required>
-              <label class="label" for="message">Message</label>
-           </div>
-           <div class="form-field col-lg-12">
-              <input class="submit-btn" type="submit" value="Submit">
-           </div>
-        </form>
-     </section>
+              <div class="author">&mdash; Craig Stephen</div>
+            </blockquote>
+          </div>
+        </div>  <!-- .item -->
 
-     <section id="clients">
-            <h2 class="heading">Our faithful clients</h2>
-            <div class="clientSlider owl-carousel">
-                <div> <img src="img/logoA.png" alt="" srcset=""> </div>
-                <div> <img src="img/logoB.png" alt="" srcset=""> </div>
-                <div> <img src="img/logoA.png" alt="" srcset=""> </div>
-                <div> <img src="img/logoB.png" alt="" srcset=""> </div>
-                <div> <img src="img/logoA.png" alt="" srcset=""> </div>
-                <div> <img src="img/logoB.png" alt="" srcset=""> </div>
-                <div> <img src="img/logoA.png" alt="" srcset=""> </div>
-                <div> <img src="img/logoB.png" alt="" srcset=""> </div>
-              </div>
-    </section>
-</body>
+        <div class="d-md-flex testimony-29101 align-items-stretch">
+          <div class="image" style="background-image: url('img/person_2.jpg');"></div>
+          <div class="text">
+            <blockquote>
+              <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, at! Atque totam obcaecati veniam eius vero, similique quibusdam! Sunt sequi, nemo. Quam consequuntur ipsum suscipit repellat molestiae laboriosam, incidunt!&rdquo;</p>
 
+              <div class="author">&mdash; Mary Spector</div>
+            </blockquote>
+          </div>
+        </div>  <!-- .item -->
+
+        <div class="d-md-flex testimony-29101 align-items-stretch">
+            <div class="image" style="background-image: url('img/person_3.jpg');"></div>
+            <div class="text">
+              <blockquote>
+                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, at! Atque totam obcaecati veniam eius vero, similique quibusdam! Sunt sequi, nemo. Quam consequuntur ipsum suscipit repellat molestiae laboriosam, incidunt!&rdquo;</p>
+  
+                <div class="author">&mdash; Jessica berkly</div>
+              </blockquote>
+            </div>
+          </div>  <!-- .item -->
+          
+
+      </div>
+
+
+    </div>
+  </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+  <div class="get-in-touch">
+    <h1 class="title">Get in touch</h1>
+    <form class="contact-form row">
+       <div class="form-field col-lg-6">
+          <input id="name" class="input-text js-input" type="text" required>
+          <label class="label" for="name">Name</label>
+       </div>
+       <div class="form-field col-lg-6 ">
+          <input id="email" class="input-text js-input" type="email" required>
+          <label class="label" for="email">E-mail</label>
+       </div>
+       <div class="form-field col-lg-6 ">
+          <input id="company" class="input-text js-input" type="text" required>
+          <label class="label" for="company">Company Name</label>
+       </div>
+        <div class="form-field col-lg-6 ">
+          <input id="phone" class="input-text js-input" type="text" required>
+          <label class="label" for="phone">Contact Number</label>
+       </div>
+       <div class="form-field col-lg-12">
+          <input id="message" class="input-text js-input" type="text" required>
+          <label class="label" for="message">Message</label>
+       </div>
+       <div class="form-field col-lg-12">
+          <input class="submit-btn" type="submit" value="Submit">
+       </div>
+    </form>
+</div>
+</section>
+
+
+<!-- Footer -->
     <footer>
         <div class="container">
             <div class="row justify-content-center">
@@ -182,20 +234,22 @@
                     <div class="subscribe mb-5">
                         <form action="#" class="subscribe-form">
             <div class="form-group d-flex">
-              <input type="text" class="form-control rounded-left" placeholder="Drop your mail like it's HOT!">
+              <input type="text" class="form-control rounded-left" placeholder="Subscribe to our Newsletter">
               <input type="submit" value="Subscribe" class="form-control submit px-3">
             </div>
           </form>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row first-footer-container">
                 <div class="col-md-4 col-lg-5">
                     <div class="row">
                         <div class="col-md-12 col-lg-8 mb-md-0 mb-4">
-                            <h2 class="footer-heading"><a href="#" class="logo">Logo</a></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate mi sit amet lectus sodales suscipit. Nulla ultrices varius enim eu cursus.</p>
-                            <a href="#">read more <span class="ion-ios-arrow-round-forward"></span></a>
+                            <h2 class="footer-heading"><a href="#" class="logo">Outverses</a></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloremque facere voluptatibus aliquam quaerat voluptatem explicabo.</p>
+                            <a href="#">read more <span class="material-symbols-outlined">
+                                chevron_right
+                                </span></a>
                         </div>
                     </div>
                 </div>
@@ -266,8 +320,7 @@
       <div class="col-md-6 col-lg-8">
 
         <p class="copyright">
-Copyright &copy; 2022 All rights reserved | Developed & Designed by <a href="https://www.instagram.com/bose.code/" target="_blank">&lt;BOSE.CODE/&gt;</a>
-</p>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Outverses | All rights reserved | Designed & Developed by </i> <a href="https://www.instagram.com/bose.code/" target="_blank">&lt;BOSE.CODE/&gt;<a></p>
       </div>
       <div class="col-md-6 col-lg-4 text-md-right">
           <p class="mb-0 list-unstyled">
@@ -280,119 +333,35 @@ Copyright &copy; 2022 All rights reserved | Developed & Designed by <a href="htt
         </div>
     </footer>
 
+
+    <!-- Scripting -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-    $('.owl-carousel .clientSlider').owlCarousel .clientSlider({
-loop:true,
-margin:10,
-nav:false,
-autoplay:true,
-    autoplayTimeout:2000,
-responsiveClass:true,
-responsive:{
-0:{
-    items:1,
-    nav:true
-},
-600:{
-    items:3,
-    nav:false
-},
-1000:{
-    items:5,
-    nav:true,
-    loop:false
-}
-}
+    $(function() {
+
+
+$('.slide-one-item').owlCarousel({
+    center: false,
+    autoplayHoverPause: true,
+    items: 1,
+    loop: true,
+    stagePadding: 0,
+    margin: 0,
+    smartSpeed: 1500,
+    autoplay: true,
+    pauseOnHover: false,
+    dots: true,
+    nav: true,
+    navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
+});
+
+
 })
 </script>
-<script>
-    $(document).ready(function() {
 
-$('.counter').each(function () {
-$(this).prop('Counter',0).animate({
-Counter: $(this).text()
-}, {
-duration: 4000,
-easing: 'swing',
-step: function (now) {
-    $(this).text(Math.ceil(now));
-}
-});
-}); 
-
-});  
-</script>
-<script>
-    $(document).ready(function() {
-
-$('.owl-carousel').owlCarousel({
-    mouseDrag:false,
-    loop:true,
-    margin:2,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:3
-        }
-    }
-}); 
-
-$('.owl-prev').click(function() {
-    $active = $('.owl-item .item.show');
-    $('.owl-item .item.show').removeClass('show');
-    $('.owl-item .item').removeClass('next');
-    $('.owl-item .item').removeClass('prev');
-    $active.addClass('next');
-    if($active.is('.first')) {
-        $('.owl-item .last').addClass('show');
-        $('.first').addClass('next');
-        $('.owl-item .last').parent().prev().children('.item').addClass('prev');
-    }
-    else {
-        $active.parent().prev().children('.item').addClass('show');
-        if($active.parent().prev().children('.item').is('.first')) {
-            $('.owl-item .last').addClass('prev');
-        }
-        else {
-            $('.owl-item .show').parent().prev().children('.item').addClass('prev');
-        }
-    }
-});
-
-$('.owl-next').click(function() {
-    $active = $('.owl-item .item.show');
-    $('.owl-item .item.show').removeClass('show');
-    $('.owl-item .item').removeClass('next');
-    $('.owl-item .item').removeClass('prev');
-    $active.addClass('prev');
-    if($active.is('.last')) {
-        $('.owl-item .first').addClass('show');
-        $('.owl-item .first').parent().next().children('.item').addClass('prev');
-    }
-    else {
-        $active.parent().next().children('.item').addClass('show');
-        if($active.parent().next().children('.item').is('.last')) {
-            $('.owl-item .first').addClass('next');
-        }
-        else {
-            $('.owl-item .show').parent().next().children('.item').addClass('next');
-        }
-    }
-});
-
-});
-</script>
-
-<script src="app.js"></script>
-
+</body>
 </html>
